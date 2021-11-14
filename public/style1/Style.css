@@ -156,3 +156,39 @@ div[data-skill="9"] > span {
 h4 {
     margin-bottom: 5px;
 }
+
+@media only screen and (max-width: 468px) {
+    header {
+        margin-bottom: 55px;
+    }
+    hgroup {
+        padding-left: 30px;
+    }
+    #contact {
+        position: inherit;
+        width: 100%;
+        background-color: white;
+    }
+    header > div{
+        display: initial;
+    }
+    .content {
+        display: inherit;
+        width: 90%;
+        margin: 0 auto;
+    }
+    h3 {
+        padding-top: 15px;
+    }
+    #contact > h3 {
+        display: block;
+        background-color: white;
+    }
+    p {
+        padding-right: 0;
+    }
+    dd {
+        background-color: white;
+    }
+    
+  }
