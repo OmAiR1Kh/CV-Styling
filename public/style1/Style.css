@@ -127,21 +127,21 @@ div[data-skill="3"] > span {
 div[data-skill="1"] > span {
     width: calc(10% - 2%);
 }
-div[data-skill="9"] > span {
-    width: calc(90% - 2%);
-}
 div[data-skill="7"] > span {
     width: calc(70% - 2%);
+}
+div[data-skill="9"] > span {
+    width: calc(90% - 2%);
 }
 .experience-date-separator {
     color: red;
 }
+.experience-details::before {
+    content: "In";
+}
 .experience-details {
     color: rgb(148, 148, 148);
     text-indent: 10px;
-}
-.experience-details::before {
-    content: "In";
 }
 .experience-type {
     color: red;
