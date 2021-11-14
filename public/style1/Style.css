@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #9a9a9a;
+    margin-bottom: 65px;
+}
+hgroup {
+    color: red;
+}
+
+header > div{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-left: 12%;
+
+}
+
+#contact {
+    position: absolute;
+    background-color: black;
+    width: 50%;
+    top: 10px;
+    right: 0;
+    line-height: 25px;
+}
+
+#contact > h3 {
+    display: none;
+}
+dl {
+    margin: 0;
+}
+
+dt, dd {
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    margin: 0;
+}
+dd > a {
+    color: red;
+    text-decoration: none;
+}
+dt {
+    background-color: red;
+    width: 120px;
+    color: white;
+}
+dd {
+    background-color: black;
+}
+.content {
+    display: grid;
+    grid-template-areas: 
+    "about competencies" 
+    "experiences education" 
+    "hobbies ." ;
+    width: 80%;
+    margin: 0 auto;
+}
+#about {
+    grid-area: about;
+}
+#competencies {
+    grid-area: competencies;
+}
+#experiences {
+    grid-area: experiences;
+}
+#education {
+    grid-area: education;
+}
+#hobbies {
+    grid-area: hobbies;
+}
+h3::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: red;
+ }
+h3 {
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding-bottom: 10px;
+ }
+p {
+    padding-right: 20px;
+}
+.skills-primary {
+    margin-bottom: 20px;
+}
+.skills-primary::before {
+    content: "Main";
+}
+.skills-secondary::before {
+    content: "Other";
+}
+.skills-secondary > .skill {
+    opacity: 0.7;
+}
+.skill {
+    background-color: rgb(209, 209, 209);
+    width: 100%;
+    margin: 3px;
+    padding: 5px;
+}
+.skill > span {
+    background-color: red;
+    display: inherit;
+    padding: 5px;
+    color: white;
+}
+div[data-skill="5"] > span {
+    width: calc(50% - 2%);
+}
+div[data-skill="3"] > span {
+    width: calc(30% - 2%);
+}
+div[data-skill="1"] > span {
+    width: calc(10% - 2%);
+}
+div[data-skill="9"] > span {
+    width: calc(90% - 2%);
+}
+div[data-skill="7"] > span {
+    width: calc(70% - 2%);
+}
+.experience-date-separator {
+    color: red;
+}
+.experience-details {
+    color: rgb(148, 148, 148);
+    text-indent: 10px;
+}
+.experience-details::before {
+    content: "In";
+}
+.experience-type {
+    color: red;
+}
+.experience-institution {
+    color: red;
+    font-weight: 300;
+}
+.experience-institution::before {
+    content: "@ ";
+}
+h4 {
+    margin-bottom: 5px;
+}
